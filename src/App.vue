@@ -7,7 +7,7 @@ import ButtonUi from './components/ui/ButtonUi.vue'
   <header>
     
     <div>
-        <img alt="Vue logo" class="logo" src="@/assets/logo.png"/>
+        <img alt="logo" class="logo" src="@/assets/logo.png"/>
         <h4>Авторизация</h4>
         <input type="text" placeholder="Логин">
         <input type="text" placeholder="Пароль">
@@ -22,6 +22,7 @@ import ButtonUi from './components/ui/ButtonUi.vue'
     </div>
   </header>
   <RouterView />
+  <img alt="cube" class="main-img" src="@/assets/main-cube.png"/>
 </template>
 
 <style scoped>
@@ -32,7 +33,17 @@ header {
   border-radius: 10px;
   padding: 80px 95px 60px 165px;
 }
-
+.main-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 800px;
+  height: 650px;
+}
+.main-img img {
+  width: 100%;
+  height: 100%;
+}
 input {
   border-radius: 10px;
   background: #F6F6F6;
