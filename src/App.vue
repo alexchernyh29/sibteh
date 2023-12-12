@@ -1,24 +1,26 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import ButtonUi from './components/ui/ButtonUi.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    
+    <div>
+        <img alt="Vue logo" class="logo" src="@/assets/logo.png"/>
+        <h4>Авторизация</h4>
+        <input type="text" placeholder="Логин">
+        <input type="text" placeholder="Пароль">
+        <ButtonUi>Вход</ButtonUi>
+      </div>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <ButtonUi>123</ButtonUi>
-      </nav>
+      
+      <div class="wrapper__item">
+        <p class="wrapper__item-text">Если возникла проблема, то можете написать <RouterLink to="/about">Алёне из Сибтеха</RouterLink></p>
+        <p class="wrapper__item-text">С любовью, ваш <RouterLink to="/about">Сибтех</RouterLink></p>
+      </div>
     </div>
   </header>
-
   <RouterView />
 </template>
 
@@ -26,52 +28,66 @@ import ButtonUi from './components/ui/ButtonUi.vue'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 80px 95px 60px 165px;
 }
 
+input {
+  border-radius: 10px;
+  background: #F6F6F6;
+  color: #000;
+  border: none;
+  height: 70px;
+  width: 350px;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+input::placeholder {
+  opacity: 0.5;
+}
+input:nth-child(2) {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h4 {
+  color: #000;
+  font-family: Cera Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  width: 117px;
+  height: 30px;
+  flex-shrink: 0;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
+.wrapper__item-text {
+  color: #676767;
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.64px;
+  max-width: 260px;
+  margin-top: 8px;
 }
 
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
     flex-wrap: wrap;
   }
 

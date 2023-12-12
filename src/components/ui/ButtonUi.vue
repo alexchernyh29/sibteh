@@ -21,19 +21,20 @@ const props = defineProps({
 </script>
 <style scoped>
 a.buttons {
-    max-width: 200px;
+    max-width: 160px;
 	text-decoration: none;
-	padding: 10px;
+	padding: 16px 32px;
 	color: #fff;
 	background-color: #3EA748;
 	text-align: center;
 	line-height: 20px;
 	display: block;
-	margin: 20px auto;
-	font: normal 17px arial;
-	border-radius: 20px;
+	font: normal 16px arial;
+	border-radius: 10px;
 }
-
+a.buttons:hover {
+	background-color: #33793A;
+}
 
 a.buttons:not(.active):hover,
 a.buttons:not(.active):focus {
