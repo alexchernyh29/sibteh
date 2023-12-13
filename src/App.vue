@@ -5,14 +5,13 @@ import ButtonUi from './components/ui/ButtonUi.vue'
 
 <template>
   <header>
-    
     <div>
-        <img alt="logo" class="logo" src="@/assets/logo.png"/>
-        <h4>Авторизация</h4>
-        <input type="text" placeholder="Логин">
-        <input type="text" placeholder="Пароль">
-        <ButtonUi>Вход</ButtonUi>
-      </div>
+      <img alt="logo" class="logo" src="@/assets/images/logo.png"/>
+      <h4>Авторизация</h4>
+      <input type="text" placeholder="Логин">
+      <input type="text" placeholder="Пароль">
+      <ButtonUi>Вход</ButtonUi>
+    </div>
     <div class="wrapper">
       
       <div class="wrapper__item">
@@ -22,7 +21,7 @@ import ButtonUi from './components/ui/ButtonUi.vue'
     </div>
   </header>
   <RouterView />
-  <img alt="cube" class="main-img" src="@/assets/main-cube.png"/>
+  <img alt="cube" class="main-img" src="@/assets/images/main-cube.png"/>
 </template>
 
 <style scoped>

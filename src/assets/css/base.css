@@ -36,6 +36,13 @@
   --section-gap: 160px;
 }
 
+@font-face {
+  font-family: 'CeraPro-Regular';
+  src: local('CeraPro-Regular'), local('CeraPro-Regular'), url('~@/assets/fonts/geometria/CeraPro-Regular.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
@@ -66,19 +73,7 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'CeraPro-Regular';
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
