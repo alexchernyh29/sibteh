@@ -31,11 +31,30 @@ a.buttons {
 	display: block;
 	font: normal 16px arial;
 	border-radius: 10px;
+	font-family: 'CeraPro-Medium';
+	font-weight: 500;
 }
 a.buttons:hover {
 	background-color: #33793A;
 }
-
+a.white {
+	max-width: 160px;
+	text-decoration: none;
+	padding: 16px 32px;
+	color: #3EA748;
+	background-color: #fff;
+	text-align: center;
+	line-height: 20px;
+	display: block;
+	font: normal 16px arial;
+	border-radius: 10px;
+	translate: 0.5s;
+}
+a.white:hover {
+	color: #fff;
+	background-color: #3EA748;
+	translate: 0.5s;
+}
 a.buttons:not(.active):hover,
 a.buttons:not(.active):focus {
 	color: #fff;

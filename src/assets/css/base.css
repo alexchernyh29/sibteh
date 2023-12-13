@@ -39,7 +39,9 @@
 @font-face {
   font-family: 'CeraPro-Regular';
   src: local('CeraPro-Regular'), local('CeraPro-Regular'), url('~@/assets/fonts/geometria/CeraPro-Regular.woff2') format('woff2');
-  font-weight: 100;
+  font-family: 'CeraPro-Medium';
+  src: local('CeraPro-Medium'), local('CeraPro-Medium'), url('~@/assets/fonts/geometria/CeraPro-Medium.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
 }
 
