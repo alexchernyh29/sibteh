@@ -5,7 +5,7 @@ import ButtonUi from './components/ui/ButtonUi.vue'
 
 <template>
   <header>
-    <div>
+    <div class="wrap">
       <img alt="logo" class="logo" src="@/assets/images/logo.png"/>
       <h4>Авторизация</h4>
       <input type="text" placeholder="Логин">
@@ -31,6 +31,10 @@ header {
   background-color: #fff;
   border-radius: 10px;
   padding: 80px 95px 60px 165px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
 }
 .main-img {
   position: absolute;
