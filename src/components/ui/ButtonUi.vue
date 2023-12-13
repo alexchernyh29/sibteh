@@ -33,9 +33,33 @@ a.buttons {
 	border-radius: 10px;
 	font-family: 'CeraPro-Medium';
 	font-weight: 500;
+	font-size: 16px;
 }
 a.buttons:hover {
 	background-color: #33793A;
+}
+a.white-border {
+	border-radius: 10px;
+	border: 1px solid #3EA748;
+	max-width: 160px;
+	text-decoration: none;
+	padding: 16px 32px;
+	color: #3EA748;
+	background-color: #fff;
+	text-align: center;
+	line-height: 20px;
+	display: block;
+	font: normal 16px arial;
+	border-radius: 10px;
+	translate: 0.5s;
+	font-family: 'CeraPro-Medium';
+	font-weight: 500;
+	font-size: 16px;
+}
+a.white-border:hover {
+	color: #fff;
+	background-color: #3EA748;
+	translate: 0.5s;
 }
 a.white {
 	max-width: 160px;
@@ -49,6 +73,9 @@ a.white {
 	font: normal 16px arial;
 	border-radius: 10px;
 	translate: 0.5s;
+	font-family: 'CeraPro-Medium';
+	font-weight: 500;
+	font-size: 16px;
 }
 a.white:hover {
 	color: #fff;

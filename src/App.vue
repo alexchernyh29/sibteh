@@ -11,6 +11,8 @@ import ButtonUi from './components/ui/ButtonUi.vue'
       <input type="text" placeholder="Логин">
       <input type="text" placeholder="Пароль">
       <ButtonUi>Вход</ButtonUi>
+      <ButtonUi cssClass="white">Вход</ButtonUi>
+      <ButtonUi cssClass="white-border">Вход</ButtonUi>
     </div>
     <div class="wrapper">
       
