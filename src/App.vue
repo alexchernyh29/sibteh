@@ -10,7 +10,7 @@ import ButtonUi from './components/ui/ButtonUi.vue'
       <h4>Авторизация</h4>
       <input type="text" placeholder="Логин">
       <input type="text" placeholder="Пароль">
-      <ButtonUi>Вход2</ButtonUi>
+      <ButtonUi>Вход3</ButtonUi>
       <ButtonUi cssClass="white">Вход</ButtonUi>
       <ButtonUi cssClass="white-border">Вход</ButtonUi>
     </div>
